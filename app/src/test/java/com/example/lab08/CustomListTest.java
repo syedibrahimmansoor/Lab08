@@ -28,4 +28,9 @@ public class CustomListTest {
         assertFalse(list.hasCity(city));
     }
 
+    @Test
+    public void testCountCities() {
+        list = mockCityList();
+        assertEquals(1, list.countCities());
+    }
 }
